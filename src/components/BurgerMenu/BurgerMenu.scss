@@ -1,0 +1,66 @@
+@import '../../globalStyles/constants.scss';
+@import '../../globalStyles/animations.scss';
+
+.burger-menu {
+  animation: droppingFromRight 0.2s;
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  z-index: 10;
+  right: 0px;
+  top: 0px;
+  background-color: $burger-menu-background-color;
+
+  &_closing {
+    animation: droppingInRight 0.2s;
+  }
+  // .burger-menu__inner
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .burger-menu__ul
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  // .burger-menu__li
+
+  &__li {
+    margin-bottom: 30px;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: font-weight 0.1s;
+    &:hover {
+      font-weight: 600;
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+
+  // .burger-menu__li-logo
+
+  &__li-logo {
+    letter-spacing: 0.64em;
+  }
+}
+.close-menu {
+  // .close-menu__btn
+
+  &__btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    &:hover {
+      color: red;
+    }
+  }
+}

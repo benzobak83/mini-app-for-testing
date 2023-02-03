@@ -1,0 +1,68 @@
+@import '../../globalStyles/constants.scss';
+@import '../../globalStyles/animations.scss';
+
+.custom-select-wrapper {
+  width: 100%;
+  position: relative;
+  .custom-select {
+    width: 100%;
+    cursor: pointer;
+    background-color: $select-background-color;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    padding: 17px 20px;
+    max-width: 443px;
+    color: $select-color;
+    max-height: 68px;
+    border: 1px solid $select-border-color;
+    position: relative;
+
+    &::after {
+      transition: color 0.2s, transform 0.2s;
+      content: '▼';
+      position: absolute;
+      width: 21.32px;
+      height: 21.9px;
+      right: 23px;
+    }
+
+    &_active {
+      background-color: $select-background-color2;
+      color: $select-color2;
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__options {
+      position: absolute;
+      z-index: 2;
+      background-color: $select-background-color;
+      width: 100%;
+      max-height: 204px;
+
+      border: 1px solid $select-border-color;
+      overflow: auto;
+
+      animation: dropping 0.3s;
+      @include transparent-scroll;
+    }
+    &__option {
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+      font-weight: 400;
+      font-size: 22px;
+      color: $select-color;
+      padding: 16px 5px;
+      transition: font-weight 0.1s;
+      &:not(:last-child) {
+        border-bottom: 1px solid $select-color2;
+      }
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}

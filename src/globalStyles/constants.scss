@@ -1,0 +1,52 @@
+$main-wrapper-background-color: var(--background-color);
+
+$header-background-color: var(--background-color);
+$header-border-color: var(--border-color);
+$header-color: var(--text-color);
+
+$burger-menu-background-color: var(--background-color-burger);
+$burger-menu-color: --background-color;
+
+$input-border-radius: 48px;
+$input-background-color: #e7e7e7;
+$input-text-color: var(--text-color2);
+
+$cart-count-background-color: var(--background-color2);
+$cart-count-color: var(--text-color2);
+
+$btn-background-color: var(--background-color);
+$btn-background-color2: var(--background-color2);
+$btn-color: var(--text-color);
+$btn-color2: var(--text-color2);
+$btn-border-color: var(--border-color);
+$btn-border-color2: var(--border-color2);
+
+$select-background-color: var(--background-color);
+$select-background-color2: var(--background-color2);
+$select-color: var(--text-color);
+$select-color2: var(--text-color2);
+$select-border-color: var(--border-color);
+
+$footer-border-color: var(--border-color);
+$footer-background-color: var(--background-color);
+$footer-background-color2: var(--background-color2);
+$footer-color: var(--text-color);
+$footer-color2: var(--text-color2);
+
+$avatar-box-shadow: var(--avatar-box-shadow);
+
+$search-history-menu-background-color: var(--background-color);
+$search-history-menu-color: var(--text-color);
+$search-history-border-color: var(--border-color);
+
+@mixin transparent-scroll {
+  /* хром, сафари */
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* ie 10+ */
+  & {
+    -ms-overflow-style: none;
+  }
+}

@@ -1,0 +1,27 @@
+@keyframes dropping {
+  from {
+    transform: translate(0px, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes droppingFromRight {
+  from {
+    transform: translate(100%, 0px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes droppingInRight {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(100%, 0px);
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../globalStyles/constants.scss';
+
+.footer {
+  height: 50px;
+  width: 100%;
+  // .footer_nav
+
+  &_nav {
+    height: 100%;
+  }
+
+  // .footer__ul
+
+  &__ul {
+    display: flex;
+    height: 100%;
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+    }
+  }
+
+  // .footer__item
+
+  &__item {
+    height: 100%;
+    flex: calc(45% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: $footer-background-color;
+    color: $footer-color;
+    transition: font-weight 0.1s;
+    &_active {
+      background-color: $footer-background-color2;
+      color: $footer-color2;
+    }
+    &:hover {
+      font-weight: 600;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid $footer-border-color;
+    }
+    // .footer__item_big
+
+    &_big {
+      flex: 55%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../../globalStyles/constants.scss';
+
+.header {
+  .search-input {
+    color: black;
+  }
+  .search-history {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    left: 0px;
+    top: 50px;
+    z-index: -1;
+    background-color: $search-history-menu-background-color;
+    cursor: default;
+    border-bottom: 1px solid $search-history-border-color;
+    border-top: 1px solid $search-history-border-color;
+    opacity: 1;
+    transition: top 0.2s, opacity 1s;
+    &_hidden {
+      visibility: hidden;
+      opacity: 0;
+      top: 0px;
+    }
+    // .search-history__ul
+
+    &__ul {
+      padding: 43px 0px;
+      cursor: default;
+      position: relative;
+
+      text-align: center;
+    }
+
+    // .search-history__item
+
+    &__item {
+      font-size: 23px;
+      letter-spacing: 2px;
+      width: auto;
+      margin-bottom: 16px;
+      color: $search-history-menu-color;
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}
