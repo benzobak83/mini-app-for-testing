@@ -32,17 +32,20 @@
     cursor: pointer;
     background-color: $footer-background-color;
     color: $footer-color;
-    transition: font-weight 0.1s;
-    &_active {
+    transition: font-weight 0.1s, background-color 0.2s, color 0.2s;
+
+    &:hover {
+      font-weight: 600;
       background-color: $footer-background-color2;
       color: $footer-color2;
     }
-    &:hover {
-      font-weight: 600;
-    }
     &:not(:last-child) {
       border-right: 1px solid $footer-border-color;
+      @media screen and (max-width: 950px) {
+        border-right: none;
+      }
     }
+
     // .footer__item_big
 
     &_big {
