@@ -8,11 +8,12 @@ const HistorySearchList: FC<HistorySearchListProps> = ({
   handleClick,
   memoizedStyleValue,
 }) => {
+ 
   return (
     <ul
       className="search-history__ul"
       style={memoizedStyleValue as TCoordHeaderSearch}>
-      {historySearchItems.reverse().map(text => (
+      {historySearchItems.map(text => (
         <HistorySearchItem key={text} text={text} handleClick={handleClick} />
       ))}
     </ul>
