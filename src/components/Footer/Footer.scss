@@ -16,6 +16,7 @@
     height: 100%;
     @media screen and (max-width: 950px) {
       flex-direction: column;
+      border-top: 1px solid $footer-border-color;
     }
   }
 
@@ -34,6 +35,13 @@
     color: $footer-color;
     transition: font-weight 0.1s, background-color 0.2s, color 0.2s;
 
+    @media screen and (max-width: 950px) {
+      border-right: none;
+      padding-top: 15px;
+      &:last-child {
+        padding-bottom: 15px;
+      }
+    }
     &:hover {
       font-weight: 600;
       background-color: $footer-background-color2;
@@ -41,9 +49,6 @@
     }
     &:not(:last-child) {
       border-right: 1px solid $footer-border-color;
-      @media screen and (max-width: 950px) {
-        border-right: none;
-      }
     }
 
     // .footer__item_big
