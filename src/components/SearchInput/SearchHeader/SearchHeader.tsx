@@ -11,7 +11,7 @@ import HistorySearchList from '../HistorySearchList'
 import './SearchHeader.scss'
 import { TCoordHeaderSearch, THistorySearchItem } from './SearchHeader.types'
 
-const SearchHeader: FC = () => {
+const SearchHeader: FC = React.memo(() => {
   const [coord, setCoord] = useState<TCoordHeaderSearch | null>(null)
   const [historySearchItems, setHistorySearchItems] = useState<
     THistorySearchItem[]
@@ -123,6 +123,6 @@ const SearchHeader: FC = () => {
       </div>
     </>
   )
-}
+})
 
 export { SearchHeader }

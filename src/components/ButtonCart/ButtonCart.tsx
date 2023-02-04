@@ -4,7 +4,7 @@ import { useCartContext } from '../../contexts/CartContext'
 
 const ButtonCart: FC = () => {
   const { countCartItems, setCountCartItems } = useCartContext()
-
+  
   const addItemInCard = useCallback(() => {
     !countCartItems && setCountCartItems(1)
   }, [countCartItems])
