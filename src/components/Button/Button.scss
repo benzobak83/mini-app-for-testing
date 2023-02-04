@@ -1,0 +1,12 @@
+@import '../../globalStyles/constants.scss';
+
+.btn {
+    background: $btn-background-color;
+    color: $btn-color;
+    max-height: 68px;
+    height: 68px;
+    border: 1px solid #000000;
+    font-size: 22px;
+    color: $btn-color2;
+  }
+  

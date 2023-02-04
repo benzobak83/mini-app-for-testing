@@ -1,6 +1,7 @@
 import React, { FC, useCallback } from 'react'
 import { FcPlus } from 'react-icons/fc'
 import { useCartContext } from '../../contexts/CartContext'
+import { Button } from '../Button/Button'
 
 const ButtonCart: FC = () => {
   const { countCartItems, setCountCartItems } = useCartContext()
@@ -15,16 +16,16 @@ const ButtonCart: FC = () => {
 
   return (
     <div className="description__buttons-cart">
-      <button
-        className="description__btn-add-to-cart btn"
+      <Button
+        className="description__btn-add-to-cart"
         onClick={addItemInCard}>
         Add to Cart
-      </button>
-      <button
-        className="description__btn-increment-count-cart btn"
+      </Button>
+      <Button
+        className="description__btn-increment-count-cart"
         onClick={incrementItemInCard}>
         <FcPlus />
-      </button>
+      </Button>
     </div>
   )
 }
