@@ -1,11 +1,12 @@
 import React, { FC } from 'react'
+import Button from '../../Button'
 import ButtonCart from '../../ButtonCart'
 import ProductSelects from '../ProductSelects'
 
 const DescriptionsButtons: FC = () => {
   return (
     <div className="description__buttons">
-      <button className="description__btn btn">Personalise</button>
+      <Button className="description__btn">Personalise</Button>
       <ButtonCart />
       <ul className="description__terms terms">
         <li className="terms__item">
