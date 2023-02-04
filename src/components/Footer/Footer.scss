@@ -37,7 +37,7 @@
 
     @media screen and (max-width: 950px) {
       border-right: none;
-      padding-top: 15px;
+      padding: 10px 0px;
       &:last-child {
         padding-bottom: 15px;
       }
@@ -49,6 +49,9 @@
     }
     &:not(:last-child) {
       border-right: 1px solid $footer-border-color;
+      @media screen and (max-width: 950px) {
+        border-right: none;
+      }
     }
 
     // .footer__item_big
