@@ -43,7 +43,7 @@ const SearchHeader: FC = React.memo(() => {
     setSearchIsFocus(true)
   }, [])
   const onBlur = useCallback(() => {
-    setTimeout(() => setSearchIsFocus(false), 100)
+    setTimeout(() => setSearchIsFocus(false), 200)
   }, [])
 
   const handleClickItem = useCallback((e: React.MouseEvent) => {
