@@ -1,2 +1,2 @@
 # mini-app-for-testing
-<h1><a href='https://elaborate-melba-382c10.netlify.app/'>DEMO</a></h1>
+<h1><a href='https://deploy--sage-griffin-d94334.netlify.app//'>DEMO</a></h1>

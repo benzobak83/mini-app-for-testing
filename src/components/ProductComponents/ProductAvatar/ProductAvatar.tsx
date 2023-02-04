@@ -11,7 +11,7 @@ const ProductAvatar: FC = () => {
   return (
     <div className="product__avatar avatar">
       <div className="avatar__inner">
-        <img src={srcAvatar as string} alt="avatar" className="avatar__img" />
+        <img src={srcAvatar as string} alt="avatar" className="avatar__img" loading='lazy' />
       </div>
     </div>
   )
