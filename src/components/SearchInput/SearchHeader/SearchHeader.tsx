@@ -58,7 +58,7 @@ const SearchHeader: FC = React.memo(() => {
       const target = e.target as HTMLInputElement
       const key = e.key
       if (key === 'Enter' && !historySearchItems.includes(target.value)) {
-        setHistorySearchItems(prev => [...prev, target.value])
+        setHistorySearchItems(prev => [target.value, ...prev])
       }
     },
     [historySearchItems]
